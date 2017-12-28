@@ -5,6 +5,7 @@ import {SplashScreen} from '@ionic-native/splash-screen';
 import {Keyboard} from "@ionic-native/keyboard";
 
 import {HomePage} from '../pages/home/home';
+import {BaiduMapPage} from '../pages/baidu-map/baidu-map';
 import {IconPage} from '../pages/icon/icon';
 
 @Component({
@@ -23,7 +24,8 @@ export class MyApp {
         // used for an example of ngFor and navigation
         this.pages = [
             {title: '首页', component: HomePage},
-            {title: '自定义图标', component: IconPage}
+            {title: '自定义图标', component: IconPage},
+            {title: '百度地图', component: BaiduMapPage},
         ];
 
     }

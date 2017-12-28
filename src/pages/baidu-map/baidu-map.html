@@ -3,10 +3,13 @@
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title>首页</ion-title>
+        <ion-title>百度地图示例</ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-    <div [ngx-echarts]="option1" style="width: 100%;height:300px;"></div>
+<ion-content>
+
+    <!-- 地图 -->
+    <div id="map" #map style="height:100%;width:100%"></div>
+
 </ion-content>
