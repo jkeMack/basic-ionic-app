@@ -7,6 +7,7 @@ import {Keyboard} from "@ionic-native/keyboard";
 import {HomePage} from '../pages/home/home';
 import {BaiduMapPage} from '../pages/baidu-map/baidu-map';
 import {IconPage} from '../pages/icon/icon';
+import {ProvinceListPage} from '../pages/province-list/province-list';
 
 @Component({
     templateUrl: 'app.html'
@@ -26,6 +27,7 @@ export class MyApp {
             {title: '首页', component: HomePage},
             {title: '自定义图标', component: IconPage},
             {title: '百度地图', component: BaiduMapPage},
+            {title: '省份列表', component: ProvinceListPage},
         ];
 
     }

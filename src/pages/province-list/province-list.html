@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>省市列表</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="搜索省份名称"></ion-searchbar>
+    <ion-list *ngIf="!isSearch">
+        <ion-item *ngFor="let item of provinceList">{{item.properties.name}}</ion-item>
+    </ion-list>
+
+    <ion-list *ngIf="isSearch">
+        <ion-item *ngFor="let item of filterData">{{item.properties.name}}</ion-item>
+    </ion-list>
+</ion-content>

@@ -6,23 +6,27 @@ import {MyApp} from './app.component';
 import {HomePage} from '../pages/home/home';
 import {BaiduMapPage} from '../pages/baidu-map/baidu-map';
 import {IconPage} from '../pages/icon/icon';
+import {ProvinceListPage} from '../pages/province-list/province-list';
 
 import {NgxEChartsModule} from '../ngx-echarts/echarts.module';
 
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {Keyboard} from "@ionic-native/keyboard";
+import {HttpModule} from '@angular/http';
 
 @NgModule({
     declarations: [
         MyApp,
         HomePage,
         BaiduMapPage,
-        IconPage
+        IconPage,
+        ProvinceListPage
     ],
     imports: [
         BrowserModule,
         NgxEChartsModule,
+        HttpModule,
         IonicModule.forRoot(MyApp),
     ],
     bootstrap: [IonicApp],
@@ -30,7 +34,8 @@ import {Keyboard} from "@ionic-native/keyboard";
         MyApp,
         HomePage,
         BaiduMapPage,
-        IconPage
+        IconPage,
+        ProvinceListPage
     ],
     providers: [
         StatusBar,
